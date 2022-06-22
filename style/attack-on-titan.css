@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0px 0px 0px 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  /* background-color: rgb(177, 177, 177); */
+}
+
+.images {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.poster {
+  border-radius: 0px !important;
+  padding: 4px;
+  opacity: 1 !important;
+  filter: brightness(100%) !important;
+}

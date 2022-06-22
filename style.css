@@ -1,0 +1,179 @@
+* {
+  box-sizing: border-box;
+  margin: 0px 0px 0px 0px;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ------------------------------Header------------------------------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(111, 162, 224);
+  height: 50px;
+}
+/*------------------------Left Section-----------*/
+.left-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.logo-pic {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.logo-name {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 400;
+  font-size: 20px;
+  justify-content: center;
+}
+
+/*------------------------Right Section-----------*/
+
+.right-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  margin-right: 10px;
+}
+
+/* To make the outline of the search bar to zero */
+.right-section .search-bar:focus {
+  outline-width: 0;
+}
+
+.search-bar {
+  height: 40px;
+  font-size: 16px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+/* The input text padding */
+.search-bar[type="text"] {
+  padding-left: 10px;
+}
+
+.search-bar::placeholder {
+  font-size: 15px;
+  padding-left: 8px;
+}
+
+.search-button {
+  height: 40px;
+  width: 60px;
+  background-color: rgb(222, 222, 222);
+  border: 1px solid gray;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  margin-left: -5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.search-button .tooltip {
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding: 4px 8px 4px 8px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: opacity 0.15s;
+  pointer-events: none;
+}
+
+.search-button:hover .tooltip {
+  opacity: 1;
+}
+
+.search-button img {
+  height: 30px;
+  width: 40px;
+}
+
+.about {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+/* ------------------------------------------------------------------- */
+/* -----------------------Seasons class------------------------------ */
+.years {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.year {
+  margin-left: 50px;
+  padding: 5px 5px 5px 5px;
+  background-color: rgb(44, 42, 44);
+  color: white;
+  border-radius: 6px;
+}
+
+.seasons {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px;
+  justify-content: center;
+}
+
+.season {
+  /* background-color: rgb(91, 137, 192); */
+  /* border: 1px solid red; */
+  margin-left: 20px;
+  /* height: 300px; */
+  position: relative;
+}
+
+.poster {
+  object-fit: cover;
+  object-position: top center;
+  width: 100%;
+  height: 300px;
+  opacity: 0.9;
+  filter: brightness(60%);
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.poster:hover {
+  opacity: 1;
+}
+
+.poster-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  position: absolute;
+  bottom: 150px;
+  color: azure;
+  font-weight: 500;
+
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+/* ------------------------------------------------------------------- */
+/* -----------------------Description class------------------------------ */
+
+.descriptions {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+  row-gap: 4px;
+}
